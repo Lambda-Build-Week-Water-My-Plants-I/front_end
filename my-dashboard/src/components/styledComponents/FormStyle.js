@@ -1,9 +1,5 @@
 import styled from "styled-components"
 
-
-
-
-
 const StyledForm = styled.div `
     background: #F2F3F2;
     opacity: 0.95;
@@ -29,6 +25,7 @@ const StyledForm = styled.div `
     }
 
 
+    /* Label Text Styling */
     .label-text-1 {
         position: absolute;
         left: 18%;
@@ -56,6 +53,7 @@ const StyledForm = styled.div `
         font-family: "Nunito";
     }
     
+    /* Input Styling */
     .form-item-1{
         border-radius: 5px;
         background: #FFFFFF;

@@ -15,26 +15,15 @@ import formSchemaLogin from "./validation/LoginSchema"
 
 
 function Login(props) {
-    // Initial variables with blank items
-    const initialErrorValues ={
+    // Slices of state
+    const [formErrors, setFormErrors] = useState({
         username: "",
         password: "",
-      }
-      
-      const initialLoginValues = {
+      })
+    const [loginValues, setLoginValues] = useState({
         username : "",
         password : ""
-      }
-
-    // Slices of state
-    const [formErrors, setFormErrors] = useState(initialErrorValues)
-    const [loginValues, setLoginValues] = useState(initialLoginValues)
-   
-    
-
-   
-
-   
+      })  
 //onChange Handler/Yup Validator
 const onInputChange = evt => {
     const name = evt.target.name
@@ -96,8 +85,8 @@ const onInputChange = evt => {
             <a href="/">Sign Up</a>
             <div className="info">
                 {/* Dummy Links */}
-                <a href="/">Home</a>
-                <a href="/">About</a>
+                <a href="https://watermyownplants.netlify.app/index.html">Home</a>
+                <a href="https://watermyownplants.netlify.app/about.html">About</a>
             </div>
         </header>
     </StyledDiv>

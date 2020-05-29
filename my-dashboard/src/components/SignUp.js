@@ -11,29 +11,6 @@ import StyledForm from "./styledComponents/FormStyle"
 //Yup Schema
 import formSchemaSignup from "./validation/SignupSchema"
 
-
-const formSchema = yup.object().shape({
-    username: 
-        yup
-        .string()
-        .required('Please enter your name'),
-    
-        phone_number: 
-        yup
-        .string()
-        .required('Please enter your phone number')
-        .length(12,'Please enter a VALID phone number in the following format 123-123-1234'),
-    
-        password: 
-        yup
-        .string()
-        
-        .required('Please create a password')
-        .min(4, "Your password must be 6 characters long")
-        
-    })
-
-
 // Initial variables with blank items
 
 function Signup(props) {
